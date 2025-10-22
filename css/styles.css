@@ -1,12 +1,40 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
     line-height: 1.5;
     }
+
 ul {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
+
+img {
+    display:block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .logo-header {
     font-family: "Raleway", sans-serif;
     line-height: 1.17;
