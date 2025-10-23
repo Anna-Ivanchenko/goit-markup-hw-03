@@ -55,8 +55,6 @@ header .nav {
 }
 
 .logo-header {    
-    margin-top: 24px;
-    margin-right: 76px;
     width: 115px;
     height: 24px;
     font-family: "Raleway", sans-serif;
@@ -75,7 +73,6 @@ header .nav {
     display: flex;
     gap: 40px;
     width: 261px;
-    margin-top: 24px;
 }
 
 .nav-list .nav-link {
@@ -138,37 +135,90 @@ header .nav {
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
-    box-shadow: 0 4px 4px 0 #000000;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin-top: 48px;
     width: 169px;
     height: 56px;
     cursor: pointer;
 }
+
 .hero-button:hover,
 .hero-button:focus {
     color: #e1e0e4;
     background-color: #404BBF;
 }
-.features .features-item-title {
+
+.features .container {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.features-item {
+    flex-basis: calc((100% - 48px) / 4);
+}
+
+.features-item-title {
     color: #2e2f42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    
 }
-.features .features-item-text {
+
+.features-item-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
-    
+    margin-top: 8px;
 }
+
+.team .container {
+    max-width: 1440px;
+    margin: 0, auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .team {
     background-color: #F4F4FD;
 }
+
+.team-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    border-radius: 0 0 4px 4px;
+    margin-top: 72px;
+}    
+    
 .team-list .team-item {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background-color: #FFFFFF;
+    object-fit: cover;
+    padding-bottom: 32px;
+    flex-basis: calc((100% - 48px) / 4);
 }
+
 .team-title {
     color: #2E2F42;
     font-size: 36px;
@@ -178,6 +228,7 @@ header .nav {
     text-transform: capitalize;
 }
 .team-list .team-name {
+    margin-top: 32px;
     color: #2E2F42;
     font-weight: 500;
     font-size: 20px;
@@ -186,6 +237,7 @@ header .nav {
     text-align: center;
 }
 .team-list .team-position {
+    margin-top: 8px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
