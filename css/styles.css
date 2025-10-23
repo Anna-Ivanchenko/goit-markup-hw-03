@@ -15,6 +15,10 @@ body {
     line-height: 1.5;
     }
 
+a {
+    text-decoration: none;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -27,6 +31,7 @@ img {
     object-fit: cover;
 }
 
+
 .container {
     max-width: 1440px;
     padding-left: 156px;
@@ -35,7 +40,25 @@ img {
     margin-right: 0;
 }
 
-.logo-header {
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo-header {    
+    margin-top: 24px;
+    margin-right: 76px;
+    width: 115px;
+    height: 24px;
     font-family: "Raleway", sans-serif;
     line-height: 1.17;
     text-transform: uppercase;
@@ -47,6 +70,14 @@ img {
 .logo-header .accent-header {
     color: #2E2F42;
 }
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    width: 261px;
+    margin-top: 24px;
+}
+
 .nav-list .nav-link {
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -57,8 +88,17 @@ img {
 .nav-list .nav-link:focus {
     color: #404bbf;
 }
+
+.contact {
+    display: flex;
+    gap: 40px;
+    
+}
+
 .contact-address {
+    display: inline-flex;
     font-style: normal;
+
 }
 .contact .contacts { 
     color: #434455;
@@ -69,8 +109,18 @@ img {
 .contact .contacts:focus {
     color: #404bbf;
 }
+
+.hero-section .container {
+    max-width: 1440px;
+    margin: 0, auto;
+    text-align: center;
+}
+
 .hero-section {
-    background-color: #2E2F42;    
+    background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    
 }
 .hero-title {
     color: #FFFFFF;
@@ -78,7 +128,8 @@ img {
     font-size: 56px;    
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;    
+    text-align: center;
+
 }
 .hero-button {
     font-family: "Roboto", sans-serif;
@@ -87,6 +138,11 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
+    box-shadow: 0 4px 4px 0 #000000;
+    border-radius: 4px;
+    margin-top: 48px;
+    width: 169px;
+    height: 56px;
     cursor: pointer;
 }
 .hero-button:hover,
