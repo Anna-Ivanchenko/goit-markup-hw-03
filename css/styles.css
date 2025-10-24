@@ -31,7 +31,6 @@ img {
     object-fit: cover;
 }
 
-
 .container {
     max-width: 1440px;
     padding-left: 156px;
@@ -142,9 +141,12 @@ header .nav {
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
-
+    max-width: 496px;
 }
 .hero-button {
+    min-width: 169px;
+    display: block;
+    border: none;
     font-family: "Roboto", sans-serif;
     color: #FFFFFF;
     font-weight: 500;
@@ -169,6 +171,9 @@ header .nav {
 /*  #region section features */
 .features .container {
     display: flex;
+    }
+
+.features {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -184,6 +189,7 @@ header .nav {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+    margin-bottom: 8px;
 }
 
 .features-list {
@@ -215,19 +221,19 @@ header .nav {
 .team .container {
     max-width: 1440px;
     margin: 0, auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    
 }
 
 .team {
     background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-list {
     display: flex;
     justify-content: center;
     gap: 24px;
-    border-radius: 0 0 4px 4px;
     margin-top: 72px;
 }    
     
@@ -237,6 +243,12 @@ header .nav {
     object-fit: cover;
     padding-bottom: 32px;
     flex-basis: calc((100% - 48px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-info {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-title {
@@ -246,6 +258,7 @@ header .nav {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -257,6 +270,7 @@ header .nav {
 
 .team-list .team-name {
     margin-top: 32px;
+    margin-bottom: 8px;
     color: #2E2F42;
     font-weight: 500;
     font-size: 20px;
