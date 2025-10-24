@@ -41,7 +41,7 @@ img {
 }
 
 /* #region header */
-.header {
+.page-header {
     border-bottom: 1px solid #e7e9fc
 }
 
@@ -66,7 +66,7 @@ header .nav {
 .logo-header {    
     width: 115px;
     height: 24px;
-    margin-right: 76px
+    margin-right: 76px;
     font-family: "Raleway", sans-serif;
     line-height: 1.17;
     text-transform: uppercase;
@@ -90,7 +90,10 @@ header .nav {
     letter-spacing: 0.02em;
     font-weight: 500;
     color: #2E2F42;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
+
 .nav-list .nav-link:hover,
 .nav-list .nav-link:focus {
     color: #404bbf;
