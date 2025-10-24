@@ -41,12 +41,20 @@ img {
 }
 
 /* #region header */
+.header {
+    border-bottom: 1px solid #e7e9fc
+}
+
 header .container {
     display: flex;
+    width: 1158px;
     justify-content: space-between;
     align-items: center;
     padding-top: 24px;
     padding-bottom: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 header .nav {
@@ -58,6 +66,7 @@ header .nav {
 .logo-header {    
     width: 115px;
     height: 24px;
+    margin-right: 76px
     font-family: "Raleway", sans-serif;
     line-height: 1.17;
     text-transform: uppercase;
